@@ -31,7 +31,7 @@ void find_RID_and_PIX(char *reply_card)
 			len_data = ft_atoi(reply_card[i], reply_card[i+1]) * 2;
 			i  += 2;
 			printf("\n\nRID && PIX \n");
-			for (j = 0; j <= len_data && i < len_reply_card; j++){
+			for (j = 0; j < len_data && i < len_reply_card; j++){
 				if (j == 5*2)
 					printf(" && ");
 				printf("%c", reply_card[i]);
